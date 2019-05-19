@@ -1,0 +1,168 @@
+
+/*for label*/
+.text_label_c {
+    font-family: Arial, serif;
+    text-align: center;
+    font-size: 20px;
+    color: midnightblue;
+    font-weight: bold;
+}
+
+
+/*for submit button FFFFF*/
+.s_button_c{
+    text-align: center;
+}
+.submit_button_c{
+    font-family: Arial;
+    font-size: 20px;
+    width: 120px;
+    height: 60px;
+    border-radius: 80px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    border: 3px solid #3498db;
+    display: inline-block;
+    text-decoration: none;
+    color: #3498db;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+}
+.submit_button_c:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #3498db;
+    opacity: .5;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+}
+.submit_button_c:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #3498db;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+    transition-delay: .2s;
+}
+.submit_button_c:hover{
+    color: #f1f1f1;
+    background: #3498db;
+}
+.submit_button_c:hover:before{
+    top: 0;
+}
+.submit_button_c:hover:after{
+    top: 0;
+}
+.submit_button_c:focus{
+    background: #3498db;
+    color: #f1f1f1;
+}
+
+
+/*check box*/
+.city_d input{
+    display: none;
+    padding-top: 10px;
+}
+.city_d{
+    display: inline-block;
+    padding-left: 24px;
+    padding-right: 20px;
+    position: relative;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 22px;
+    user-select: none;
+}
+.city_d .checkmark4{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+    margin-top: 0px;
+}
+.city_d span{
+    margin-top: 9px;
+}
+.city_d input:checked + .checkmark4{
+    background-color: #3498db;
+}
+.city_d:hover .checkmark4{
+    background-color: #ccc;
+}
+.city_d input:checked + .checkmark4:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 9px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.diagram_title{
+    /*position: absolute;*/
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+.diagram_title i{
+    line-height: 90px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Rent and Buy button*/
+.rent_but, .buy_but{
+    font-family: Arial, serif;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    alignment: center;
+    display: inline-block;
+    width: 46%;
+    margin: 10px;
+    letter-spacing: 1px;
+    color: black;
+    box-shadow: 5px 5px lightgrey;
+}
+
+.rent_but{
+    float: left;
+}
+
+.rent_but:hover, .buy_but:hover {
+    border: 2px solid skyblue;
+    color: white;
+    background-color: skyblue;
+}
+
+.rent_but:focus, .buy_but:focus {
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    outline-style: none;
+    background-color: skyblue;
+}
+
